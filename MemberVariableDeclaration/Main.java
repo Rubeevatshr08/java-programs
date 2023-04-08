@@ -1,38 +1,23 @@
 package MemberVariableDeclaration;
 
-class Car
+class Book 
 {
-    float speed; 
-    float distanceCovered;
-     
+    String bookName;
+    String publisher;
 
-    Car(float speed,float distanceCovered)
+    Book(String bookName, String publisher)
     {
-        this.speed = speed;
-        this.distanceCovered = distanceCovered;
-
+        this.bookName = bookName;
+        this.publisher = publisher;
     }
 
-    public float getSpeed()
-    {
-        return this.speed;
-    }
 
-    void setSpeed( float speed1 )
-    {
-        speed = speed1;
-    }
 }
-
 public class Main
 {
-    public static void main(String[] args)
-    {
-        Car thar = new Car(300,1000);
-        // thar.speed = 200;
-        // thar.distanceCovered = 0;
-        // thar.setSpeed(140);
-        System.out.println(thar.getSpeed());
-        System.out.println(thar.distanceCovered);
+    public static void main(String[] args) {
+      Book book1 = new Book("Information system","Rubee vats");
+      System.out.println(book1.bookName);
+      System.out.println(book1.publisher);
     }
 }
